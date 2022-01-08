@@ -1,1 +1,22 @@
+:root {
+  --primary-color: #4A3001;
+}
 
+header {
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+}
+
+body {
+  background-color: lightgreen;
+  color: var(--primary-color);
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  border: solid black 1px;
+  border-radius: 20px;
+}
