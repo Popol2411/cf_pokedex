@@ -18,7 +18,35 @@ let pokemonList = [
   }
 ];
 
-pokemonList.forEach(log);
+function add(pokemon) {
+    pokemonList.push(pokemon);
+  }
+
+function getAll() {
+    return pokemonList;
+  }
+
+return {
+    add: add,
+    getAll: getAll
+  };
+})();
+
+/* return {                     //this one?
+  add: function(pokemon) {
+    pokemonList.push(pokemon);
+  },
+  getAll: function() {
+    return pokemonList;
+  }
+};
+})() */
+
+document.write(pokemonRepository.getAll());
+    pokemonRepository.add({ name: 'Pikachu' });
+document.write(pokemonRepository.getAll());
+
+/* pokemonList.forEach(log);          //forEach to be removed?
 
   function log(item)
   {
@@ -31,4 +59,4 @@ pokemonList.forEach(log);
     document.write(item.name + " (height: " + item.height + ")" + "<br><br>");
   }
 };
-})();
+})(); */
