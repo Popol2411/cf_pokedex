@@ -1,3 +1,5 @@
+let pokemonRepository = (function () {
+
 let pokemonList = [
   {
       name: "Butterfree",
@@ -29,3 +31,4 @@ pokemonList.forEach(log);
     document.write(item.name + " (height: " + item.height + ")" + "<br><br>");
   }
 };
+})();
