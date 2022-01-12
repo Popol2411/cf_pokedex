@@ -36,16 +36,14 @@ console.log(pokemonRepository.getAll());
 pokemonRepository.add({ name: 'Pikachu' });
 console.log(pokemonRepository.getAll());
 
-pokemonList.forEach(log);
-
-  function log(item)
+pokemonRepository.getAll().forEach(function(pokemon)
   {
-    if (item.height >1.0)
+    if (pokemon.height >1.0)
     {
-    document.write(item.name + " (height: " + item.height + ") - Wow, that's big!" + "<br><br>");
+    document.write(pokemon.name + " (height: " + pokemon.height + ") - Wow, that's big!" + "<br><br>");
   }
     else
     {
-    document.write(item.name + " (height: " + item.height + ")" + "<br><br>");
+    document.write(pokemon.name + " (height: " + pokemon.height + ")" + "<br><br>");
   }
-};
+});
