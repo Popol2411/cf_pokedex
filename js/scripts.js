@@ -33,7 +33,7 @@ function add(pokemon) {
 })();
 
 console.log(pokemonRepository.getAll());
-pokemonRepository.add({ name: 'Pikachu' });
+pokemonRepository.add({ name: "Pikachu", height: "0.5", types: ["yellow", "thunder"] });
 console.log(pokemonRepository.getAll());
 
 pokemonRepository.getAll().forEach(function(pokemon)
