@@ -22,31 +22,21 @@ function add(pokemon) {
     pokemonList.push(pokemon);
   }
 
-function getAll() {
+  function getAll() {
     return pokemonList;
   }
 
-return {
+  return {
     add: add,
     getAll: getAll
   };
 })();
 
-/* return {                     //this one?
-  add: function(pokemon) {
-    pokemonList.push(pokemon);
-  },
-  getAll: function() {
-    return pokemonList;
-  }
-};
-})() */
+console.log(pokemonRepository.getAll());
+pokemonRepository.add({ name: 'Pikachu' });
+console.log(pokemonRepository.getAll());
 
-document.write(pokemonRepository.getAll());
-    pokemonRepository.add({ name: 'Pikachu' });
-document.write(pokemonRepository.getAll());
-
-/* pokemonList.forEach(log);          //forEach to be removed?
+pokemonList.forEach(log);
 
   function log(item)
   {
@@ -59,4 +49,3 @@ document.write(pokemonRepository.getAll());
     document.write(item.name + " (height: " + item.height + ")" + "<br><br>");
   }
 };
-})(); */
