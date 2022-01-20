@@ -18,7 +18,7 @@ let pokemonList = [
   }
 ];
 
-function add(pokemon) {
+  function add(pokemon) {
     pokemonList.push(pokemon);
   }
 
@@ -34,16 +34,16 @@ function add(pokemon) {
     button.classList.add("my_button");
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
-    button.addEventListener('click', function showDetails(event) {
-    console.log(pokemon);
-});
-  }
+    button.addEventListener("click", function (event) {
+    console.log(event)
+    console.log(pokemon)
+    showDetails(pokemon)
+  })
+};
 
   function showDetails(pokemon) {
-  console.log(pokemon);
-  console.log(event);
-  showDetails(pokemon);
- }
+    console.log('showDetails function says hello', pokemon)
+  }
 
   return {
     add: add,
