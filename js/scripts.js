@@ -53,12 +53,12 @@ function loadList() {   //loadList function
       item.types = details.types;
     }).catch(function (e) { //otherwise the error will be displayed in the console
       console.error(e);
-    });
+    });}
 
     function showDetails(item) {
-      pokemonRepository.loadDetails(item).then(function () { //details loaded from the repository
+      loadDetails(item).then(function () { //details loaded into console
       console.log(item);
-    });
+    })
   }
 
 
