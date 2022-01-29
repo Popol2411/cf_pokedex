@@ -21,7 +21,36 @@ h1 {
   border-radius: 20px;
 }
 
+p {
+  text-align: center;
+}
+
 .my_button {
   border: solid blue 3px;
   border-radius: 10px;
+}
+
+#show-modal {
+  color: green;
+}
+
+#modal-container {
+  display: none;
+  background-color: yellow;
+  color: red;
+}
+
+#modal-container.is-visible {
+  display: block;
+  background-color: yellow;
+  color: red;
+}
+
+.modal-close {
+  float:right;
+}
+
+.pokemon-modal-image {
+  display: flex;
+  margin:auto;
 }
