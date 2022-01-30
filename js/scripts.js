@@ -89,10 +89,6 @@ function loadList() {   //loadList function
       modalContainer.classList.add('is-visible'); // class "is-visible"
 }
 
-      document.querySelector('#show-modal').addEventListener('click', () => {
-      showModal('Modal title', 'This is the modal content!'); // on click, the modal is shown
-});
-
   function hideModal() {
   let modalContainer = document.querySelector('#modal-container');
       modalContainer.classList.remove('is-visible');
@@ -114,14 +110,7 @@ function loadList() {   //loadList function
   showDetails: showDetails,
   };
 
-  modalContainer.addEventListener('click', (e) => {
-    let target = e.target;
-    if (target === modalContainer) {
-      hideModal();
-    }
-  });
-
-})();
+  })();
 
 pokemonRepository.loadList().then(function() {
 pokemonRepository.getAll().forEach(function(pokemon) {
