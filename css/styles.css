@@ -1,15 +1,16 @@
-:root {
-  --primary-color: #4A3001;
+ :root {
+  --primary-color: #ea3333;
 }
 
 header {
-  background-color: green;
+  font-size: 2em;
+  background-color: #2a75bb;
   padding: 10px;
   text-align: center;
 }
 
 body {
-  background-color: lightgreen;
+  background-color: #FFCC00;
   color: var(--primary-color);
   font-size: 2rem;
 }
@@ -18,39 +19,16 @@ h1 {
   text-align: center;
   padding: 10px;
   border: solid black 1px;
-  border-radius: 20px;
 }
 
 p {
   text-align: center;
 }
 
-.my_button {
-  border: solid blue 3px;
-  border-radius: 10px;
-}
-
-#show-modal {
-  color: green;
-}
-
-#modal-container {
-  display: none;
-  background-color: yellow;
-  color: red;
-}
-
-#modal-container.is-visible {
-  display: block;
-  background-color: yellow;
-  color: red;
-}
-
-.modal-close {
-  float:right;
-}
-
 .pokemon-modal-image {
-  display: flex;
-  margin:auto;
+  width: 100%;
+}
+
+.pokemon-container {
+
 }
