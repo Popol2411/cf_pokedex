@@ -4,7 +4,6 @@
 
 header {
   font-size: 2em;
-  background-color: #2a75bb;
   padding: 10px;
   text-align: center;
 }
@@ -27,8 +26,4 @@ p {
 
 .pokemon-modal-image {
   width: 100%;
-}
-
-.pokemon-container {
-
 }
