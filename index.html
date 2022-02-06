@@ -11,9 +11,19 @@
   </head>
   <header>Pokedex</header>
   <body>
+    <nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./img/pokemonlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+  </a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search for Pokemon..." aria-label="Search">
+  </form>
+</nav>
     <h1>Welcome to the Ultimate Pokemon Bible</h1>
-    <div class='pokemon-container'>
-    <ul class='list-group'></ul> <!-- 'pokemon-list' replaced by 'list-group' Bootstrap -->
+    <div class='container'>
+    <div class='row'>
+    <div class="col">
+    <ul class='list-group list-unstyled'></ul> <!-- 'pokemon-list' replaced by 'list-group' Bootstrap -->
     <li class='group-list-item'></li> <!-- li with 'group-list-item' Bootstrap class -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show Pokemon Info</button> <!-- button with 'btn btn-primary' class added for the buttons created in JS and data toggle -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- the modal id 'modal-container' has been taken over from the previous modal -->
@@ -32,6 +42,8 @@
               </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
