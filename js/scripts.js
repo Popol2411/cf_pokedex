@@ -52,6 +52,11 @@ function loadList() {   // loadList function
       item.imageUrl = details.sprites.front_default;
       item.height = details.height;
       item.types = details.types;
+      item.weight = details.weight;
+      item.abilities = [];
+        for (let i = 0; i < details.abilities.length; i++) {
+          item.abilities.push(details.abilities[i].ability.name);
+        }
     }).catch(function (e) { // otherwise the error will be displayed in the console
       console.error(e);
     });}
@@ -63,23 +68,29 @@ function loadList() {   // loadList function
   }
 
   function showModal(item) { // showModal function
-      let modalBody = $(".modal-body"); // modalBody
       let modalTitle = $(".modal-title"); // modalTitle
-      let modalHeader = $(".modal-header"); // modalHeader
+      let modalBody = $(".modal-body"); // modalBody
+      // let modalHeader = $(".modal-header"); // no header so removed
 
       modalTitle.empty(); // clears the modalTitle after display
       modalBody.empty();  // clears the modalBody after display
 
       let pokemonName = $("<h2>" + item.name + "</h2>");
 
-      let pokemonHeight = $("<p>" + "height: " + item.height + "</p>");
+      let pokemonHeight = $("<p>" + "Height: " + item.height + "</p>");
+
+      let pokemonWeight = $("<p>" + "Weight: " + item.weight + "</p>");
+
+      let pokemonAbilities = $("<p>" +"Abilities: " + item.abilities + "</p>");
 
       let pokemonImage = $("<img class='pokemon-modal-image'>");
       pokemonImage.attr ("src", item.imageUrl); // pokemon image attribute loaded from 'item.imageUrl'
 
       modalTitle.append(pokemonName); // pokemonName is displayed as the title in the modal
-      modalBody.append(pokemonHeight); // pokemonHeight is displayed in the body of the modal
       modalBody.append(pokemonImage); // pokemonImage is displayed in the body of the modal
+      modalBody.append(pokemonHeight); // pokemonHeight is displayed in the body of the modal
+      modalBody.append(pokemonWeight); // pokemonWeight is displayed in the body of the modal
+      modalBody.append(pokemonAbilities); // pokemonDetails are displayed in the body of the modal
 }
 
   return {
@@ -96,5 +107,15 @@ function loadList() {   // loadList function
 pokemonRepository.loadList().then(function() {
 pokemonRepository.getAll().forEach(function(pokemon) {
 pokemonRepository.addListItem(pokemon);
+  });
+});
+
+
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $(".group-list-item").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
   });
 });
