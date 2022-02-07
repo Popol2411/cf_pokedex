@@ -10,42 +10,58 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <header>Pokedex</header>
+
   <body>
-    <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="./img/pokemonlogo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+
+<!-- Navgitation Bar -->
+
+    <nav class="navbar">
+  <a class="navbar-brand" href="index.html">
+    <img src="./img/pokemon_logo.png" width="100" height="100" class="d-inline-block align-top" alt="">
   </a>
+
+<!-- Search Form within Navigation Bar -->
+
   <form class="form-inline">
-    <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search for Pokemon..." aria-label="Search">
+    <input class="form-control rounded" id="myInput" type="search" placeholder="Search for Pokemon..." aria-label="Search">
   </form>
 </nav>
+
     <h1>Welcome to the Ultimate Pokemon Bible</h1>
-    <div class='container'>
-    <div class='row'>
-    <div class="col">
-    <ul class='list-group list-unstyled'></ul> <!-- 'pokemon-list' replaced by 'list-group' Bootstrap -->
+
+<!-- Container with the Pokemon List -->
+
+<div class="container">
+<div class="row">
+<div class="col-sm-4">
+    <ul class='list-group list-unstyled' data-toggle="modal" data-target="#Pokemon"></ul> <!-- 'pokemon-list' replaced by 'list-group' Bootstrap -->
     <li class='group-list-item'></li> <!-- li with 'group-list-item' Bootstrap class -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Show Pokemon Info</button> <!-- button with 'btn btn-primary' class added for the buttons created in JS and data toggle -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- the modal id 'modal-container' has been taken over from the previous modal -->
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="Pokemon" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"> <!-- the modal id 'modal-container' has been taken over from the previous modal -->
       <div class="modal-dialog" role="document"> <!-- the modal is breaken down in various classes to display various elements -->
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <!-- a button is added to close the modal as well -->
-            <span aria-hidden="true">&times;</span>
-              </button>
-              <div class="modal-body">
+              <h5 class="col-12 modal-title text-center text-capitalize" id="exampleModalLabel"></h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> Default close button removed
+                 <span aria-hidden="true">&times;</span> Removed the cross in modal upper corner right
+                 </button> -->
+          </div>
+
+            <div class="modal-body text-capitalize">
                 ...
-              </div>
+            </div>
+
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
               </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    </div>
+  </div>
+  </div>
+  </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- jquery minified version is added instead of the slim.min.js version -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
