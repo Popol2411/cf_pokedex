@@ -17,7 +17,6 @@ body {
 h1 {
   text-align: center;
   padding: 10px;
-  border: solid black 1px;
 }
 
 p {
@@ -26,4 +25,12 @@ p {
 
 .pokemon-modal-image {
   width: 100%;
+}
+
+nav {
+  background-color: #FFCC00;
+}
+button.btn-primary {
+  text-transform: capitalize;
+  margin: 10px;
 }
