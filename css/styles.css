@@ -34,3 +34,8 @@ button.btn-primary {
   text-transform: capitalize;
   margin: 10px;
 }
+
+div.row {
+  grid-column: 3;
+  grid-row: 5;
+}
