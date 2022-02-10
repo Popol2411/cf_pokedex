@@ -27,14 +27,15 @@ let pokemonRepository = (function() {
     i(t).then(function() {
       !(function(t) {
         let e = $('.modal-title'),
-          n = $('.modal-body');
-        e.empty(), n.empty();
-        let i = $('<h2>' + t.name + '</h2>'),
+          n = $('.modal-body'),
+          i = $('<h2>' + t.name + '</h2>'),
           o = $('<p>Height: ' + t.height + '</p>'),
           l = $('<p>Weight: ' + t.weight + '</p>'),
           a = $('<p>Abilities: ' + t.abilities + '</p>'),
           s = $('<img class=\'pokemon-modal-image\'>');
         s.attr('src', t.imageUrl),
+          e.empty(),
+          n.empty(),
           e.append(i),
           n.append(s),
           n.append(o),
@@ -58,7 +59,7 @@ let pokemonRepository = (function() {
         n.appendChild(i),
         e.appendChild(n),
         i.addEventListener('click', function(e) {
-          console.log(e), console.log(t), o(t);
+          o(t);
         });
     },
     loadList: function() {
@@ -87,8 +88,8 @@ pokemonRepository.loadList().then(function() {
 }),
   $(document).ready(function() {
     $('#myInput').on('keyup', function() {
-      var t = $(this)
-        .val()
+      const t = $(this)
+        .const()
         .toLowerCase();
       $('.group-list-item').filter(function() {
         $(this).toggle(
