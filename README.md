@@ -2,13 +2,13 @@
 
 Pokedex is a small web application built with HTML, CSS, and primarily JavaScript, which loads data from an external API and enables the viewing of that data in detail.
 
-## Key Features 
+## :key: Key Features 
 
 - Loads data from external API ([PokéAPI](https://pokeapi.co/))
 - Displays a list of 150 Pokémon
 - User action prompts a modal with details over Pokémon item. 
 
-## :hammer: Built With 
+## :hammer_and_wrench: Built With 
 
 - HTML, CSS, JavaScript
 - jQuery
@@ -16,19 +16,8 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 
 ## :page_with_curl: Technical Requirements
 
-## 👨‍💻 Get Started
+## :man_technologist: Get Started
 
 ## :rocket: Live Demo
 
-
-
-
-:floppy_disk:
-
-:computer:
-
-:calling:
-
-
-
-
+## :open_book: :speech_balloon: :man_teacher: User Stories
