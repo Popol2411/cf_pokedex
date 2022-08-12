@@ -34,7 +34,14 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 ## :man_technologist: Get Started
 
 Download the repository on your machine and open the index.html file with your browser.
+````
+https://github.com/Popol2411/cf_pokedex.git
+````
 ``
 https://github.com/Popol2411/cf_pokedex.git
 ``
+```
+https://github.com/Popol2411/cf_pokedex.git
+```
+
 ## :rocket: <a href="https://popol2411.github.io/pokedex-app/"> Live Demo</a> 
