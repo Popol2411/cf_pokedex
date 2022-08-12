@@ -11,9 +11,13 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 ## :hammer_and_wrench: Built With 
 
 - HTML
+
 - CSS
+
 - JavaScript
+
 - jQuery
+
 - Bootstrap
 
 ## :page_with_curl: Technical Requirements
@@ -25,10 +29,15 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 - The JavaScript code must be formatted according to ESLint rules.
 - The JavaScript code may be formatted via Prettier.
 - The JavaScript code may be manually formatted.
+
 - The app must use at least one additional complex UI pattern, such as a modal, for details or touch interactions.
+
 - The app may allow searching for items.
+
 - The app must not throw any errors when being used.
+
 - The app should be deployed to a publicly accessible platform like GitHub Pages.
+
 - The app must work in Chrome, Firefox, Safari, Edge, and Internet Explorer 11.
 
 ## :man_technologist: Get Started
