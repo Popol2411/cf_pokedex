@@ -18,9 +18,9 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 
 - JavaScript
 
-- jQuery
+- [jQuery](https://jquery.com/)
 
-- Bootstrap
+- [Bootstrap](https://getbootstrap.com/)
 
 ## :page_with_curl: Technical Requirements
 
