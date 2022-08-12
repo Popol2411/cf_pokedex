@@ -13,3 +13,10 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 - HTML, CSS, JavaScript
 - jQuery
 - Styled with [Bootstrap](https://getbootstrap.com/)
+
+
+👨‍💻
+
+📜
+
+:musical_score:
