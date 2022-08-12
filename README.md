@@ -4,8 +4,8 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 
 ## :key: Key Features 
 
-- Loads data from external API ([PokéAPI](https://pokeapi.co/))
-- Displays a list of 150 Pokémons
+- Loads data from external API. ([PokéAPI](https://pokeapi.co/))
+- Displays a list of 150 Pokémons.
 - User action prompts a modal with details over Pokémon item. 
 
 ## :hammer_and_wrench: Built With 
@@ -35,6 +35,6 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 
 https://github.com/Popol2411/cf_pokedex.git
 
-Download the repository on your machine and open the index.html file with your browser
+Download the repository on your machine and open the index.html file with your browser.
 
 ## :rocket: <a href="https://popol2411.github.io/pokedex-app/"> Live Demo</a> 
