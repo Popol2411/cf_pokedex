@@ -5,7 +5,9 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 ## :key: Key Features 
 
 - Loads data from external API. ([PokéAPI](https://pokeapi.co/))
+
 - Displays a list of 150 Pokémons.
+
 - User action prompts a modal with details over Pokémon item. 
 
 ## :hammer_and_wrench: Built With 
@@ -23,11 +25,17 @@ Pokedex is a small web application built with HTML, CSS and JavaScript, which lo
 ## :page_with_curl: Technical Requirements
 
 - The app must load data from an external API.
+
 - The app must display a list of items loaded from that API after the page is loaded.
+
 - The app must enable the viewing of more details for a given list item on demand, such as when clicking on a list item.
+
 - The app must have CSS styling.
+
 - The JavaScript code must be formatted according to ESLint rules.
+
 - The JavaScript code may be formatted via Prettier.
+
 - The JavaScript code may be manually formatted.
 
 - The app must use at least one additional complex UI pattern, such as a modal, for details or touch interactions.
