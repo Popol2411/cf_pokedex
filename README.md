@@ -1,6 +1,6 @@
 # :seedling: Pokédex
 
-Pokedex is a small web application built with HTML, CSS, and primarily JavaScript, which loads data from an external API and enables the viewing of that data in detail.
+Pokedex is a small web application built with HTML, CSS and JavaScript, which loads data from an external API and enables viewing detailed data.
 
 ## :key: Key Features 
 
@@ -33,6 +33,10 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 
 ## :man_technologist: Get Started
 
-## :rocket: Live Demo
+Download the repository on your machine and open the index.html file with your browser
+
+https://github.com/Popol2411/cf_pokedex.git
+
+## :rocket: <a href="https://popol2411.github.io/pokedex-app/">Live Demo</a> 
 
 
