@@ -8,7 +8,7 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 - Displays a list of 150 Pokémon
 - User action prompts a modal with details over Pokémon item. 
 
-## 🔨 Built With 
+## :hammer: Built With 
 
 - HTML, CSS, JavaScript
 - jQuery
@@ -17,6 +17,15 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 
 👨‍💻
 
-📜
 
 :musical_score:
+
+:floppy_disk:
+
+:computer:
+
+:calling:
+
+:page_with_curl:
+
+:rocket:
