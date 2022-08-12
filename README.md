@@ -20,4 +20,4 @@ Pokedex is a small web application built with HTML, CSS, and primarily JavaScrip
 
 ## :rocket: Live Demo
 
-## :open_book: :speech_balloon: :man_teacher: User Stories
+## :man_teacher: :speech_balloon: User Stories
