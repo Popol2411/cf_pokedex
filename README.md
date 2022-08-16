@@ -55,4 +55,4 @@ Download the repository on your machine and open the index.html file with your b
 https://github.com/Popol2411/cf_pokedex.git
 ````
 
-## :rocket: <a href="https://popol2411.github.io/cf_pokedex/"> Live Demo</a> 
+## :rocket: <a href="https://popol2411.github.io/cf_pokedex/">Live Demo</a> 
