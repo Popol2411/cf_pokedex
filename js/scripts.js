@@ -130,7 +130,7 @@ pokemonRepository.loadList().then(function() {
 $(document).ready(function() {
   $('#myInput').on('keyup', function() {
     const value = $(this)
-      .const()
+      .val()
       .toLowerCase();
     $('.group-list-item').filter(function() {
       $(this).toggle(
